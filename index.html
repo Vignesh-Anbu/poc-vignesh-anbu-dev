@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Surprise Message!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This is a simple website hosted on GitHub Pages.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+    <div class="card">
+        <div id="message-container" class="message-container">
+            <h1>Hellooooooooo Meowwwww!!!</h1>
+            <form id="surprise-form">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="age">Enter your age:</label>
+                <input type="number" id="age" name="age" required>
+                <button type="submit">Get Surprise Message!</button>
+            </form>
+        </div>
+        <div class="balloons">
+            <div class="balloon balloon1"></div>
+            <div class="balloon balloon2"></div>
+            <div class="balloon balloon3"></div>
+            <div class="balloon balloon4"></div>
+        </div>
+        <!-- <img src="https://via.placeholder.com/150" alt="Birthday Image" class="cake"> -->
+        <img src="path/to/your/cake-image.jpg" alt="Birthday Image" class="cake">
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
