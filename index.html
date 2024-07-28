@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise Message!</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Box</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="card">
-        <div id="message-container" class="message-container">
-            <h1>Hellooooooooo Meowwwww!!!</h1>
-            <form id="surprise-form">
-                <label for="name">Enter your name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="age">Enter your age:</label>
-                <input type="number" id="age" name="age" required>
-                <button type="submit">Get Surprise Message!</button>
-            </form>
+  <div class="container">
+    <div class="magic-box" id="magicBox">
+      <div class="name-entry">
+        <label for="userName">Enter your name:</label>
+        <br>
+        <input type="text" id="userName" name="userName">
+        <button id="startButton">Start</button>
+      </div>
+      <div class="message" id="message" style="display: none;">
+        <h1 id="greeting">Happy Birthday</h1>
+        <p>"Even though miles separate us, your presence fills my heart with warmth and happiness."</p>
+        <p>"You are the radiant star that lights up my nights and the sunshine that brightens my days."</p>
+        <p>"Happy Birthday, my one and only love!"</p>
+        <!-- <br> -->
+        <p>"Every shared memory and whispered promise feels like a treasure, keeping us close despite the distance."</p>
+        <p>"On your special day, I celebrate not just the incredible person you are, but the boundless love that keeps
+          us united."</p>
+        <p>"Here’s to many more birthdays and dreams realized together, no matter the distance that separates us."</p>
+      </div>
+      <div class="puzzles" id="puzzles" style="display: none;">
+        <div class="puzzle" id="puzzle1">
+          <h2 id="personalizedGreeting">Vannakam</h2>
+          <p>"Ungaluku Oru surprise wait panitu iruku...<br>Arambikalam ah<span id="quoteBlank1"></span>?"</p>
+          <button class="quoteOption" data-answer="correct">Arambikalam</button>
+          <button class="quoteOption" data-answer="wrong">Oru aaniyum pudunga venam :|</button>
         </div>
-        <div class="balloons">
-            <div class="balloon balloon1"></div>
-            <div class="balloon balloon2"></div>
-            <div class="balloon balloon3"></div>
-            <div class="balloon balloon4"></div>
+        <div class="puzzle" id="puzzle2" style="display: none;">
+          <h2>Match the pairs of love symbols!</h2>
+          <div class="symbols">
+            <button class="pair" data-pair="1">❤️</button>
+            <button class="pair" data-pair="2">💖</button>
+            <button class="pair" data-pair="1">❤️</button>
+            <button class="pair" data-pair="2">💖</button>
+          </div>
         </div>
-        <!-- <img src="https://via.placeholder.com/150" alt="Birthday Image" class="cake"> -->
-        <img src="path/to/your/cake-image.jpg" alt="Birthday Image" class="cake">
-
+        <div class="puzzle" id="puzzle3" style="display: none;">
+          <h2>Complete the love quote!</h2>
+          <p>"Love is not about how much you say '<span id="quoteBlank">_____</span>', but how much you prove that it's
+            true."</p>
+          <button class="quoteOption" data-answer="correct">I love you</button>
+          <button class="quoteOption" data-answer="wrong">I need you</button>
+        </div>
+      </div>
     </div>
-
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
